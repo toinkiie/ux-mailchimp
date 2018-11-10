@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    &:link,
+    &:visited,
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
+}
