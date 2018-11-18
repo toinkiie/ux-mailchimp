@@ -1,0 +1,58 @@
+// Palette
+
+
+$primary: #007C89;
+$secondary: #EFEEEA;
+$destructive: #F25F25;
+
+$blue: #b1e0ec;
+$blue2: #52bad5;
+$yellow: #FFE01B;
+$gold: #E7B75F;
+$apple: #00C14E;
+
+$body_text: #241c15;
+
+// Grid gutter
+$gutter: 15px;
+
+// spacer
+$spacer: 3rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+// Fonts
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1.6rem;
+$font-size-sm: 1.3rem;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+
+$heading-font-family: 'Open Sans', sans-serif;
+$heading-font-weight: 400;
+
+// Breakpoints
+$grid-breakpoints: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grid-breakpoints: map-merge(
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  ),
+  $grid-breakpoints
+);

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,600,700');
+  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, acronym, address, code, del, dfn,
+em, img, q, dl, dt, dd, ol, ul, fieldset, form, label, legend,
+textarea, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.7;
+  color: $body_text;
+  font-weight: $font-weight-regular;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+//
+// Credit: https://github.com/suitcss/base
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
