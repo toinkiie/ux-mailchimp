@@ -1,0 +1,88 @@
+.btn {
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: 2px;
+  display: inline-block;
+  border: 1px solid transparent;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-right: 18px;
+  margin-bottom: 9px;
+  padding: 0 18px;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+a.btn {
+  padding-top: 5px;
+  color: $body_text;
+}
+
+.btn-lg {
+  height: 48px;
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+  position: relative;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: $primary_dark;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: $secondary_dark;
+  }
+}
+
+.btn-destructive {
+  color: #fff;
+  background-color: $destructive;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: $destructive_dark;
+  }
+}
+
+.btn-dark {
+  color: #fff !important;
+  background: $input_button_bg;
+  transition: background-color 0.2s ease-in;
+  &:link {
+    color: #fff;
+  }
+  &:hover {
+    background-color: $input_button_bg_dark;
+  }
+}
+
+.btn-loading {
+  padding-left: 44px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAzOCAzOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHJva2U9IiNiZGJiYjkiPiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSIgc3Ryb2tlLXdpZHRoPSIyIj4gICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS1vcGFjaXR5PSIuNSIgY3g9IjE4IiBjeT0iMTgiIHI9IjE4Ii8+ICAgICAgICAgICAgPHBhdGggZD0iTTM2IDE4YzAtOS45NC04LjA2LTE4LTE4LTE4Ij4gICAgICAgICAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0gICAgICAgICAgICAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgICAgICAgICAgICAgICAgICAgIHR5cGU9InJvdGF0ZSIgICAgICAgICAgICAgICAgICAgIGZyb209IjAgMTggMTgiICAgICAgICAgICAgICAgICAgICB0bz0iMzYwIDE4IDE4IiAgICAgICAgICAgICAgICAgICAgZHVyPSIxcyIgICAgICAgICAgICAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+ICAgICAgICAgICAgPC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+.btn[disabled] {
+  pointer-events: none;
+  border: 1px solid #dedddc;
+  color: #bdbbb9;
+  background-color: transparent;
+}

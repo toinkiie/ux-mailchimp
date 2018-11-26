@@ -103,9 +103,13 @@
     width: 100%;
   }
 }
-
 @media (max-width: 640px) {
-  .col-1of8 {
-    width: 100%;
+    .col-1of2,.col-1of3,.col-1of4,.col-1of8,.col-2of3,.col-2of4,.col-3of4,.col-3of8,.col-4of8,.col-5of8,.col-7of8{
+      width:100%
+    }
+}
+@media (max-width: 500px) {
+  .col-2of8,.col-6of8{
+    width:100%
   }
 }
