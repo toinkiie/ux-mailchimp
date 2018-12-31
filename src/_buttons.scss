@@ -1,5 +1,6 @@
 .btn {
   height: 36px;
+  max-height: 36px;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
@@ -40,6 +41,16 @@ a.btn {
   transition: background-color 0.2s ease-in;
   &:hover {
     background-color: $primary_dark;
+  }
+}
+
+a.btn-primary {
+  color: #fff;
+  &:link,
+  &:hover,
+  &:visited,
+  &:active {
+    color: #fff;
   }
 }
 
@@ -85,4 +96,61 @@ a.btn {
   border: 1px solid #dedddc;
   color: #bdbbb9;
   background-color: transparent;
+}
+
+.btn-group {
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 9px;
+  .btn {
+    margin: 0;
+  }
+
+  .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .btn:not(:last-child):not(:first-child) {
+    border-radius: 0;
+  }
+}
+
+.btn-combo.btn {
+    margin-left: 1px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.dropdown-popup {
+  box-sizing: content-box;
+  margin-top: 5px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #dedddc;
+  background-clip: padding-box;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+
+  div {
+    font-size: 1.4rem;
+    padding: 6px 18px;
+    width: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #fff;
+    &:hover {
+      background-color: #e6f2f3;
+    }
+  }
 }
