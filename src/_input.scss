@@ -1,0 +1,97 @@
+.form-group {
+  position: relative;
+}
+
+
+.select-box {
+  position: relative;
+  display: inline-block;
+  border-radius: $border-radius;
+  min-width: 150px;
+  background-color: #ffffff;
+  height: $form-component-height;
+  border: 1px solid $border_color;
+  align-items: center;
+  padding: 9px 36px 9px 18px;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+  .select-box-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+textarea, input[type="text"], input[type="tel"], input[type="number"] {
+  display: inline-block;
+  padding: 0 8px;
+  margin-bottom: 24px;
+  vertical-align: middle;
+  border-radius: $border-radius;
+  min-width: 50px;
+  width: 100%;
+  min-height: 36px;
+  background-color: #ffffff;
+  border: 1px solid $border_color;
+  transition: all 0.2s ease-in-out 0s;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 1px solid $primary;
+    box-shadow: inset 0 0 0 1px $primary;
+  }
+}
+
+
+.checkbox {
+  position: relative;
+  color: #241c15;
+  display: block;
+  padding-left: 36px;
+  max-width: $max-width-paragraph;
+  user-select: none;
+  &:before {
+    font-family: "Material Icons";
+    content: ' ';
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid $border_color;
+    height: 25px;
+    width: 25px;
+    border-radius: $border-radius;
+    line-height: 1;
+    padding: 3px 4px;
+    color: #fff;
+    background-color: #fff;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &.checked {
+    &:before {
+      content: 'checked';
+      background-color: $primary-dark;
+      border: 1px solid $primary-dark;
+    }
+  }
+  
+  &.focused {
+    &:before {
+      border: 1px solid $primary-dark;
+    }
+  }
+
+  .checkbox-description {
+    font-weight: $font-weight-regular;
+    display: block;
+  }
+}
+

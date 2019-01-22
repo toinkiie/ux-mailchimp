@@ -1,6 +1,6 @@
 .btn {
-  height: 36px;
-  max-height: 36px;
+  height: $form-component-height;
+  max-height: $form-component-height;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
@@ -129,6 +129,7 @@ a.btn-primary {
 }
 
 .dropdown-popup {
+  user-select: none;
   box-sizing: content-box;
   margin-top: 5px;
   position: absolute;

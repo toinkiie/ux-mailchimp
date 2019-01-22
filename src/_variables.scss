@@ -19,6 +19,8 @@ $yellow: #FFE01B;
 $gold: #E7B75F;
 $apple: #00C14E;
 
+$border_color: rgba(36,28,21,0.3);
+
 $body_text: #241c15;
 
 // Grid gutter
@@ -47,6 +49,7 @@ $font-size-base: 1.6rem;
 $font-size-sm: 1.3rem;
 $font-weight-regular: 400;
 $font-weight-bold: 600;
+$font-weight-bolder: 700;
 
 $heading-font-family: 'Open Sans', sans-serif;
 $heading-font-weight: 400;
@@ -64,3 +67,7 @@ $grid-breakpoints: map-merge(
   ),
   $grid-breakpoints
 );
+
+$form-component-height: 36px;
+$border-radius: 2px;
+$max-width-paragraph: 635px;

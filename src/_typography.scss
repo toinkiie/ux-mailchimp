@@ -38,9 +38,14 @@ h4, .h4 {
 
 p {
   margin-bottom: 12px;
-  max-width: 635px;
+  max-width: $max-width-paragraph;
 }
 
 strong, b, label {
   font-weight: $font-weight-bold;
+}
+
+label {
+  font-size: 15px;
+  line-height: 18px;
 }
