@@ -1,0 +1,37 @@
+.mc-tab-navs {
+  border-bottom: 1px solid #d9d9d9;
+  height: $form-component-height;
+  a {
+    font-size: 1.6rem;
+    outline: none;
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    margin: 0 15px;
+    color: $input_button_bg_dark;
+    transition: color 0.25s ease;
+    height: $form-component-height;
+    &:link,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $input_button_bg_dark;
+    }
+
+    &:hover {
+      transition: color 0.25s ease;
+      color: $primary;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  a.active {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.mc-tab-body {
+  margin-top: 30px;
+}

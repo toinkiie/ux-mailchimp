@@ -3,7 +3,7 @@
 }
 
 
-.select-box {
+.mc-select-box {
   position: relative;
   display: inline-block;
   border-radius: $border-radius;
@@ -16,7 +16,7 @@
   line-height: 1;
   user-select: none;
   cursor: pointer;
-  .select-box-icon {
+  .mc-select-box-icon {
     position: absolute;
     right: 8px;
     top: 50%;
@@ -36,6 +36,7 @@ textarea, input[type="text"], input[type="tel"], input[type="number"] {
   background-color: #ffffff;
   border: 1px solid $border_color;
   transition: all 0.2s ease-in-out 0s;
+  font-size: 1.4rem;
 
   &:focus,
   &:active {
@@ -45,8 +46,25 @@ textarea, input[type="text"], input[type="tel"], input[type="number"] {
   }
 }
 
+input.invalid {
+  border: 1px solid $destructive;
+  box-shadow: inset 0 0 0 1px $destructive;
+  &:focus,
+  &:active {
+    outline: none;
+    border: 1px solid $destructive;
+    box-shadow: inset 0 0 0 1px $destructive;
+  }
+}
 
-.checkbox {
+.invalid-error {
+  color: $destructive;
+  margin-top: -20px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+}
+
+.mc-checkbox {
   position: relative;
   color: #241c15;
   display: block;
@@ -56,7 +74,7 @@ textarea, input[type="text"], input[type="tel"], input[type="number"] {
   &:before {
     font-family: "Material Icons";
     content: ' ';
-    font-size: 16px;
+    font-size: 1.6rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -89,7 +107,57 @@ textarea, input[type="text"], input[type="tel"], input[type="number"] {
     }
   }
 
-  .checkbox-description {
+  .mc-checkbox-description {
+    font-weight: $font-weight-regular;
+    display: block;
+  }
+}
+
+.mc-radio {
+  position: relative;
+  color: #241c15;
+  display: block;
+  padding-left: 36px;
+  max-width: $max-width-paragraph;
+  user-select: none;
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid $border_color;
+    height: 25px;
+    width: 25px;
+    border-radius: $border-radius;
+    line-height: 1;
+    padding: 3px 4px;
+    color: #fff;
+    background-color: $secondary;
+    box-shadow: inset 0 0 0 4px $secondary;
+    border-radius: 50%;
+  }
+  
+  input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &.checked {
+    &:before {
+      content: ' ';
+      background-color: $primary-dark;
+      border: 1px solid $primary-dark;
+    }
+  }
+  
+  &.focused {
+    &:before {
+      border: 1px solid $primary-dark;
+    }
+  }
+
+  .mc-checkbox-description {
     font-weight: $font-weight-regular;
     display: block;
   }

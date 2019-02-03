@@ -30,12 +30,20 @@ body {
 }
 
 a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.25s ease;
+
   &:link,
-  &:visited,
+  &:visited {
+    color: $primary;
+  }
+
   &:active,
   &:focus,
   &:hover {
-    text-decoration: none;
+    transition: color 0.25s ease;
+    color: $primary_dark;
   }
 }
 

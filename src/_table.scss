@@ -1,0 +1,30 @@
+.mc-table {
+    table-layout: auto;
+    word-break: normal;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    width: 100%;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    th {
+        word-break: normal;
+        text-align: left;
+        background-color: $table_bg;
+        border-bottom: 1px solid $table_border;
+        border-top: 1px solid $table_border;
+        font-weight: $font-weight-bold;
+    }
+
+    td {
+      border-bottom: 1px dotted $table_border;
+      cursor: default;
+    }
+    
+
+    th, td {
+        vertical-align: top;
+        padding: 12px 15px;
+    }
+}
